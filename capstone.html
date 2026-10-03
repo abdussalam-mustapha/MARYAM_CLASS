@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryam's Studio — Month 2 Capstone</title>
+    
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="capstone.css">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION HEADER (FLEXBOX) -->
+    <header id="main-header">
+        <div class="header-logo">
+            <span class="material-symbols-outlined logo-icon">palette</span>
+            <div>
+                <h1>Maryam's Studio</h1>
+                <p class="subtitle">Home Feed</p>
+            </div>
+        </div>
+        
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Notifications">
+                <span class="material-symbols-outlined">notifications</span>
+            </button>
+            <div class="user-avatar">
+                <span class="material-symbols-outlined">person</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="main-container">
+
+        <!-- 1. ANNOUNCEMENT BANNER -->
+        <div class="announcement-banner">
+            <p>
+                <span class="pulse-dot"></span> 
+                Month 2 Capstone: <strong class="highlight-text">CSS Flexbox & CSS Grid in Action! 🚀</strong>
+            </p>
+            <span class="badge badge-purple">Capstone Live</span>
+        </div>
+
+        <!-- 2. HERO SECTION (FLEXBOX ROW) -->
+        <section class="hero-section">
+            <div class="badge-row">
+                <span class="badge badge-purple">
+                    <span class="material-symbols-outlined">view_column</span> CSS Flexbox: Row Flow
+                </span>
+                <span class="badge badge-green">
+                    <span class="material-symbols-outlined">school</span> Age 11 Portfolio
+                </span>
+            </div>
+
+            <div class="hero-content">
+                <!-- Left Column Text -->
+                <div class="hero-text">
+                    <h2>Hey there! I’m <span class="highlight-text">Maryam</span> 👋</h2>
+                    <p>
+                        Welcome to my creative playground! An 11-year-old maker, digital artist & budding coder showcasing my favorite projects and hobbies.
+                    </p>
+                    <div class="button-group">
+                        <a href="#gallery-section" class="btn btn-primary">
+                            Explore Gallery <span class="material-symbols-outlined">arrow_downward</span>
+                        </a>
+                        <a href="#main-footer" class="btn btn-secondary">
+                            Contact Me <span class="material-symbols-outlined">chat_bubble</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Avatar Illustration -->
+                <div class="hero-avatar-box">
+                    <div class="avatar-card">
+                        <span class="material-symbols-outlined avatar-icon">draw</span>
+                        <div class="mini-badge top-right">
+                            <span class="material-symbols-outlined">code</span>
+                        </div>
+                        <div class="mini-badge bottom-left">
+                            <span class="material-symbols-outlined">auto_stories</span>
+                        </div>
+                    </div>
+                    <span class="avatar-name">Maryam S.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. FILTER BAR (FLEXBOX HORIZONTAL SCROLL) -->
+        <section class="filter-section">
+            <div class="section-label-row">
+                <span class="label-title">
+                    <span class="material-symbols-outlined">filter_list</span> Filter by Passion
+                </span>
+                <span class="label-info">Flexbox: Horizontal Scroll</span>
+            </div>
+
+            <div class="filter-pills-container">
+                <button class="pill active">⭐ All Projects</button>
+                <button class="pill">💻 Coding & Games</button>
+                <button class="pill">🎨 Digital Art</button>
+                <button class="pill">📚 Book Reviews</button>
+                <button class="pill">🔬 Science Crafts</button>
+                <button class="pill">🎵 Music & Beats</button>
+            </div>
+        </section>
+
+        <!-- 4. PROJECT GALLERY (CSS GRID) -->
+        <section class="gallery-section" id="gallery-section">
+            <div class="gallery-header">
+                <div>
+                    <h3>Featured Projects</h3>
+                    <p>Built during coding camp & weekend art sessions</p>
+                </div>
+                <span class="badge badge-purple">
+                    <span class="material-symbols-outlined">grid_view</span> CSS Grid: 6 Cards
+                </span>
+            </div>
+
+            <!-- THE 6-CARD CSS GRID CONTAINER -->
+            <div class="gallery-grid">
+
+                <!-- Card 1 -->
+                <article class="project-card">
+                    <div class="card-image-box">
+                        <img src="https://placehold.co/600x400/7c3aed/ffffff?text=Space+Bunny+Runner" alt="Space Bunny Game Screenshot">
+                        <span class="card-tag tag-purple">
+                            <span class="material-symbols-outlined">sports_esports</span> Coding
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Space Bunny Runner</h4>
+                        <p>A 2D platformer game made with Scratch and Python with 5 cosmic levels.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tech-label">Scratch & PyGame</span>
+                        <a href="#" class="card-link link-purple">
+                            Play Game <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="project-card">
+                    <div class="card-image-box">
+                        <img src="https://placehold.co/600x400/059669/ffffff?text=Nebula+Whiskers" alt="Nebula Whiskers Artwork">
+                        <span class="card-tag tag-green">
+                            <span class="material-symbols-outlined">palette</span> Digital Art
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Nebula Whiskers</h4>
+                        <p>Procreate digital painting exploring neon nebula brush textures and glow layers.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tech-label">Procreate & iPad</span>
+                        <a href="#" class="card-link link-green">
+                            View Artwork <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="project-card">
+                    <div class="card-image-box">
+                        <img src="https://placehold.co/600x400/d97706/ffffff?text=Percy+Jackson+Review" alt="Book Reading Journal">
+                        <span class="card-tag tag-amber">
+                            <span class="material-symbols-outlined">menu_book</span> Book Reviews
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Percy Jackson Review</h4>
+                        <p>Illustrated chapter-by-chapter mind maps and mythological creature guide.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tech-label">Reading Diary</span>
+                        <a href="#" class="card-link link-amber">
+                            Read Review <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="project-card">
+                    <div class="card-image-box">
+                        <img src="https://placehold.co/600x400/2563eb/ffffff?text=Mars+Rover+Model" alt="Cardboard Mars Rover Model">
+                        <span class="card-tag tag-purple">
+                            <span class="material-symbols-outlined">science</span> Science
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Mars Rover Model</h4>
+                        <p>Recycled cardboard robotics prototype with motorized LED headlights.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tech-label">Robotics & Craft</span>
+                        <a href="#" class="card-link link-purple">
+                            See Build <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="project-card">
+                    <div class="card-image-box">
+                        <img src="https://placehold.co/600x400/db2777/ffffff?text=Kawaii+Sticker+Pack" alt="Kawaii Dessert Stickers">
+                        <span class="card-tag tag-green">
+                            <span class="material-symbols-outlined">loyalty</span> Digital Art
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Kawaii Sticker Pack</h4>
+                        <p>A set of 12 printable stickers featuring friendly dessert monsters and sweet treats.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tech-label">Vector Illustration</span>
+                        <a href="#" class="card-link link-green">
+                            Download Pack <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="project-card">
+                    <div class="card-image-box">
+                        <img src="https://placehold.co/600x400/4f46e5/ffffff?text=8-Bit+Beat+Synthesizer" alt="Web Synthesizer Interface">
+                        <span class="card-tag tag-purple">
+                            <span class="material-symbols-outlined">music_note</span> Coding & Music
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h4>8-Bit Beat Synthesizer</h4>
+                        <p>Interactive keyboard that plays chiptune beats programmed with web audio APIs.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tech-label">Web Audio API</span>
+                        <a href="#" class="card-link link-purple">
+                            Listen & Code <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 5. EDUCATIONAL CODING HIGHLIGHT BOX -->
+        <section class="learning-box">
+            <div class="learning-header">
+                <span class="material-symbols-outlined lightbulb-icon">lightbulb</span>
+                <div>
+                    <h3>💡 How It Works (Layout Architecture)</h3>
+                    <p>Maryam’s code breakdown for peer review</p>
+                </div>
+            </div>
+
+            <div class="learning-cards flex-container">
+                <div class="info-card">
+                    <span class="material-symbols-outlined card-icon">view_stream</span>
+                    <div>
+                        <h5>1. CSS Flexbox (1D Directional Flow)</h5>
+                        <p>Used in the top header, hero greeting row, filter pills, and card footers. Flexbox excels at arranging items in a single row or column!</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <span class="material-symbols-outlined card-icon green-icon">grid_on</span>
+                    <div>
+                        <h5>2. CSS Grid (2D Multidimensional Layout)</h5>
+                        <p>Powers the 6-project gallery! Grid easily organizes items into multi-column rows that look great on desktop, tablet, and mobile screens.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (FLEXBOX) -->
+    <footer id="main-footer">
+        <div class="footer-title">
+            Built with <span class="material-symbols-outlined heart-icon">favorite</span> by Maryam • Month 2 Capstone
+        </div>
+
+        <div class="footer-links">
+            <a href="#" class="footer-link"><span class="material-symbols-outlined">terminal</span> GitHub</a>
+            <a href="#" class="footer-link"><span class="material-symbols-outlined">pets</span> Scratch</a>
+            <a href="#" class="footer-link"><span class="material-symbols-outlined">brush</span> ArtStation</a>
+            <a href="#" class="footer-link"><span class="material-symbols-outlined">mail</span> Email</a>
+        </div>
+
+        <p class="copyright">© 2026 Maryam's Studio • Learning, Coding & Designing</p>
+    </footer>
+
+</body>
+</html>
